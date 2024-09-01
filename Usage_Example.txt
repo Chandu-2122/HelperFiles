@@ -1,0 +1,13 @@
+import pandas as pd
+from data_analysis_helper import *
+
+# Load your dataset
+df = pd.read_csv('your_gaming_data.csv')
+
+# Use functions to explore the data
+show_info(df)
+show_missing_values(df)
+show_summary_statistics(df)
+show_value_counts(df, 'game_type')
+show_column_stats(df, 'play_duration')
+show_correlation_matrix(df)
